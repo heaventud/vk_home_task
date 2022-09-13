@@ -10,7 +10,7 @@ def reverse_number(number: int) -> int:
     if not isinstance(number, int):
         raise UnsupportedInput(f'Expected integer, but {type(number)} given')
     if number <= 0:
-        raise UnsupportedInput(f'Only natural numbers are supported')
+        raise UnsupportedInput('Only natural numbers are supported')
     result = 0
     i = 1
     while True:
